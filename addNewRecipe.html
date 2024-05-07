@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add New Recipe</title>
+</head>
+<body>
+    <div id="topbar"></div> 
+    <main>
+        <h2>Add New Recipe</h2>
+        <div class="recipe-form">
+            <label for="recipeTitle">Recipe Name:</label>
+            <input type="text" id="recipeTitle">
+
+            <table id="ingredientsTable">
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Size</th>
+                        <th>Ingredient</th>
+                        <th></th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><button class="remove">-</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="addIngredient">Add More Ingredients</button>
+
+            <label for="recipeSummary">Summary:</label>
+            <textarea id="recipeSummary"></textarea>
+
+            <label for="recipeInstructions">Instructions:</label>
+            <div id="instructionsList">
+                <ol>
+                <input type="text" id="newInstruction">
+                <button class="remove">-</button>
+            </ol>
+            </div>
+
+            <button id="addInstruction">Add Instruction</button>
+
+            <button id="addRecipeButton">Add Recipe to Book</button>
+        </div>
+    </main>
+    <script src="script.js"></script> 
+    <script src="./assets/scripts/addNewRecipe.js"></script> 
+</body>
+</html>

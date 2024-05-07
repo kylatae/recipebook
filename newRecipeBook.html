@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>New Recipe Book</title>
-    <link rel="stylesheet" href="../style.css"> </head>
+</head>
 <body>
-    <header>
-        <div id="topbar-container">
-            </div>
-    </header>
+    <div id="topbar"></div> 
     <main>
-        </main>
-    <script src="assets/scripts/newRecipeBook.js"></script> 
+        <h2>Create a New Recipe Book</h2>
+        <div class="new-book-form">
+            <label for="recipeBookName">Recipe Book Name:</label>
+            <input type="text" id="recipeBookName">
+            <button id="addBookButton">Add Recipe Book</button>
+        </div>
+
+        <h2>Your Recipe Books</h2>
+        <ul id="recipeBookList"> </ul> 
+    </main>
+
+    <script src="script.js"></script> 
+    <script src="./assets/scripts/newRecipeBook.js"></script> 
 </body>
 </html>

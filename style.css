@@ -1,21 +1,52 @@
 body {
-  font-family: 'Georgia', serif; /* Or pick a warm, inviting font */
-  background-color: #fcf8f2; /* A soft, creamy background */
-  color: #453227; /* A warm brown text color */
-}
-
-header {
-  background-color: #e8d8c4; /* A slightly darker shade for contrast */
-  padding: 15px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+  font-family: 'Georgia', serif; /* Warm, traditional serif font */
   margin: 0;
+  background-color: #fcf8e3; /* Slightly off-white, creamy color */
 }
 
-nav li {
+/* Style for your main content area */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.topbar {
+  background-color: #d8ab41;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Styling the dropdown menu */
+.dropdown {
+  position: relative;
   display: inline-block;
-  margin-right: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.result-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
 }
